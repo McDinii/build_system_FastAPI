@@ -1,0 +1,54 @@
+# Files and directories to ignore in Git
+
+# Python virtual environment folder (usually named venv, env, or .venv)
+venv/
+
+# Pip cache
+pip-wheel-metadata/
+
+# pytest cache
+.pytest_cache/
+
+# PyCharm internal files/directories
+.idea/
+*.iml
+*.iws
+
+# PyCharm configuration files
+/.idea/workspace.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/*.iml
+/.idea/compliance.xml
+/.idea/encodings.xml
+
+# macOS generated files
+.DS_Store
+
+# Generated documentation folder
+/docs/_build/
+
+# FastAPI logs folder
+/logs/
+
+# Ignore configuration files
+*.conf
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore build output files (usually named dist/)
+dist/
+
+# Ignore database migration files
+/alembic/versions/*.py
+
+# Ignore code coverage result files
+/htmlcov/
+
+# Developer temporary files
+*.bak
+*.swp
+*.~[0-9]*
+*~
