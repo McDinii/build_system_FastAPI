@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  build_system:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+
+  build_system_tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - build_system
+    command: [ "poetry","run", "pytest","tests" ]

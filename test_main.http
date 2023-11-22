@@ -1,0 +1,13 @@
+# Test your FastAPI endpoints
+
+POST http://127.0.0.1:8000/get_tasks
+Content-Type: application/json
+Accept: application/json
+
+{
+  "build": "forward_interest"
+}
+
+###
+
+
